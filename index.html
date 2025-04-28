@@ -1,12 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>タイトル</title>
-  </head>
-  <body>
-    <h1>ひゃっほーい！</h1>
-    テスト
-    <h3>アソーレよいよい</h3>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>すごいカード</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 300px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #333;
+    }
+    p {
+      color: #666;
+      margin: 1rem 0;
+    }
+    button {
+      background: #66a6ff;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #4a90e2;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>ようこそ！</h1>
+  <p>このカードにマウスを合わせると、ふわっと動くよ！</p>
+  <button onclick="alert('ありがとう！')">クリックしてね</button>
+</div>
+
+</body>
 </html>
